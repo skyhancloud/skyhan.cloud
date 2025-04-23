@@ -29,7 +29,7 @@ export default function DiscordStatus({ userId }: DiscordStatusProps) {
 
         if (data.status === 'offline') {
           setStatus('offline');
-          setLastSeenAt(data.last_seen_at.unix);
+          setLastSeenAt(data.last_seen_at.unix * 1000);
         } else {
           setStatus('online');
 
