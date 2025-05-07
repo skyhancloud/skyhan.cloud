@@ -44,11 +44,14 @@ SPOTIFY_CLIENT_ID=
 SPOTIFY_CLIENT_SECRET=
 SPOTIFY_REDIRECT_URL=
 SPOTIFY_REFRESH_TOKEN=
+RYBBIT_ANALYTICS_SITE_ID=
+RYBBIT_ANALYTICS_URL=
 ```
 
 > [!NOTE]
 > - To get the Spotify API credentials, you need to create a Spotify Developer account and create a new application. After creating the application, you will get the client ID and client secret. Don't forget to set the redirect URL to `https://YOUR_DOMAIN/api/spotify/callback` where `YOUR_DOMAIN` is the domain where you are hosting the website.
 > - To get the Spotify refresh token, after you have set the client ID, client secret, and redirect URL, skip this step and start the server **in development mode** with **pnpm run dev**. The server will automatically start at `http://localhost:3000`. Visit `http://localhost:3000/api/spotify` and log in with your Spotify account. After logging in, you will be redirected to `http://localhost:3000/api/spotify/callback`. The refresh token will be displayed on the page. Copy the refresh token and paste it in the `.env` file. After pasting the refresh token, restart the server. With this implementation, every 1 hour the server will automatically get a new access token using the refresh token and display your recently played tracks on the website. If you want to get rid of "recently played tracks" functionality, you can just use empty .env file.
+> - I'm using [Rybbit](https://www.rybbit.io) for analytics. You can create an account and get the site ID and URL from there. If you don't want to use Rybbit, you can just leave the `RYBBIT_ANALYTICS_SITE_ID` and `RYBBIT_ANALYTICS_URL` fields empty in the `.env` file. We don't support any other analytics providers at the moment.
 
 6. Start the server:
 

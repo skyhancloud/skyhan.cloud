@@ -6,6 +6,8 @@ declare global {
       SPOTIFY_CLIENT_SECRET: string;
       SPOTIFY_REDIRECT_URL: string;
       SPOTIFY_REFRESH_TOKEN: string;
+      RYBBIT_ANALYTICS_SITE_ID: string;
+      RYBBIT_ANALYTICS_URL: string;
     }
   }
 }

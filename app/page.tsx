@@ -25,11 +25,11 @@ export default function Page() {
 
           <div className='flex flex-col'>
             <h1 className='font-bricolageGrotesque font-bold'>
-            Gökhan Bulut
+              Gökhan Bulut
             </h1>
 
             <span className='text-sm text-secondary'>
-            Full-stack Developer
+              Full-stack Developer
             </span>
           </div>
         </div>
