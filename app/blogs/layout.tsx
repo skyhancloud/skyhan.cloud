@@ -2,8 +2,10 @@
 
 import cn from '@/utils/cn';
 import { Link } from 'next-view-transitions';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import MeImage from '@/public/me.jpeg';
 
 export default function BlogLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const router = useRouter();
@@ -54,16 +56,27 @@ export default function BlogLayout({ children }: Readonly<{ children: React.Reac
   return (
     <div className='mx-auto flex w-full max-w-[600px] flex-col gap-y-10 py-16'>
       <Link
-        className='flex flex-col'
+        className='flex items-center gap-x-4'
         href='/'
       >
-        <h1 className='font-bricolageGrotesque font-bold'>
-          {title === '' ? 'skyhan.cloud' : title.split(' - ').shift()}
-        </h1>
+        <Image
+          src={MeImage}
+          alt='Gökhan Bulut'
+          width={100}
+          height={100}
+          className='size-12 rounded-full border-2 border-primary object-cover'
+          placeholder='blur'
+        />
 
-        <span className='text-sm text-tertiary'>
-          Gökhan Bulut
-        </span>
+        <div className='flex flex-col'>
+          <h1 className='font-bricolageGrotesque font-bold'>
+            {title === '' ? 'skyhan.cloud' : title.split(' - ').shift()}
+          </h1>
+
+          <span className='text-sm text-tertiary'>
+            Gökhan Bulut
+          </span>
+        </div>
       </Link>
 
       <div

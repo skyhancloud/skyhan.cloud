@@ -6,19 +6,32 @@ import Songs from '@/components/songs';
 import DiscordStatus from '@/components/discord-status';
 import { Suspense } from 'react';
 import { LuLoader } from 'react-icons/lu';
+import Image from 'next/image';
+import MeImage from '@/public/me.jpeg';
 
 export default function Page() {
   return (
     <div className='mx-auto flex w-full max-w-[600px] flex-col gap-y-24 py-16'>
       <div className='flex w-full items-center justify-between'>
-        <div className='flex flex-col'>
-          <h1 className='font-bricolageGrotesque font-bold'>
-            Gökhan Bulut
-          </h1>
+        <div className='flex items-center gap-x-4'>
+          <Image
+            src={MeImage}
+            alt='Gökhan Bulut'
+            width={100}
+            height={100}
+            className='size-12 rounded-full border-2 border-primary object-cover'
+            placeholder='blur'
+          />
 
-          <span className='text-sm text-secondary'>
+          <div className='flex flex-col'>
+            <h1 className='font-bricolageGrotesque font-bold'>
+            Gökhan Bulut
+            </h1>
+
+            <span className='text-sm text-secondary'>
             Full-stack Developer
-          </span>
+            </span>
+          </div>
         </div>
 
         <DiscordStatus userId='957840712404193290' />
