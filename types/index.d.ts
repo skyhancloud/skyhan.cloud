@@ -9,14 +9,6 @@ declare module 'next' {
   }
 }
 
-export type SpotifyTokenResponse = {
-  access_token: string;
-  token_type: string;
-  scope: string;
-  expires_in: number;
-  refresh_token: string;
-};
-
 export type LanternSpotify = {
   track_id: string;
   song: string;
