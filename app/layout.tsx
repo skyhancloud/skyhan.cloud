@@ -27,6 +27,15 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  if (process.env.NODE_ENV === 'development') {
+    window.rybbit = {
+      // eslint-disable-next-line no-empty-function
+      pageview: () => {},
+      // eslint-disable-next-line no-empty-function
+      event: () => {}
+    };
+  }
+
   return (
     <ViewTransitions>
       <html lang='en'>

@@ -55,6 +55,9 @@ export default function DiscordStatus({ userId }: DiscordStatusProps) {
       <Link
         className='flex cursor-pointer flex-col items-end transition-opacity hover:opacity-70'
         href='https://lantern.rest'
+        onClick={() => {
+          if ('rybbit' in window) window.rybbit.event('discord_status_click');
+        }}
       >
         {!isOffline && spotify && (
           <div className='hidden items-center gap-x-2 sm:flex'>

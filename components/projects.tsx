@@ -32,6 +32,12 @@ export default function Projects() {
             href={item.link || '#'}
             key={index}
             className='group relative z-10 flex w-full flex-col gap-y-2'
+            onClick={() => {
+              if ('rybbit' in window) window.rybbit.event('project_link_click', {
+                project_name: item.name,
+                project_link: item.link
+              });
+            }}
           >
             <div className='absolute left-0 top-0 -z-10 h-[130%] w-[105%] translate-x-[-2.5%] translate-y-[-12%] rounded-xl bg-secondary opacity-0 transition-opacity duration-75 group-hover:opacity-100' />
 

@@ -7,14 +7,15 @@ import { useMedia } from 'react-use';
 import CopyCodeButton from '@/components/blogs/copy-code-button';
 
 interface CodeBlockProps {
-  children: React.ReactNode,
-  icon: React.ReactNode,
-  fileName: string,
-  language: string,
-  dimmed?: boolean
+  children: React.ReactNode;
+  id: string;
+  icon: React.ReactNode;
+  fileName: string;
+  language: string;
+  dimmed?: boolean;
 }
 
-export default function CodeBlock({ children, icon: Icon, fileName, language, dimmed = true }: CodeBlockProps) {
+export default function CodeBlock({ children, id, icon: Icon, fileName, language, dimmed = true }: CodeBlockProps) {
   const prefersDark = useMedia('(prefers-color-scheme: dark)', false);
 
   return (
@@ -31,7 +32,10 @@ export default function CodeBlock({ children, icon: Icon, fileName, language, di
           {fileName}
         </div>
 
-        <CopyCodeButton code={String(children).replace(/\n$/, '')} />
+        <CopyCodeButton
+          id={id}
+          code={String(children).replace(/\n$/, '')}
+        />
       </div>
 
       <SyntaxHighlighter
