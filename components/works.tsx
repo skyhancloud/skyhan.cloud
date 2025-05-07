@@ -1,3 +1,5 @@
+'use client';
+
 import { Link } from 'next-view-transitions';
 
 export default function Works() {
