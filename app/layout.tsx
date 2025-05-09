@@ -27,15 +27,6 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  if (process.env.NODE_ENV === 'development') {
-    window.rybbit = {
-      // eslint-disable-next-line no-empty-function
-      pageview: () => {},
-      // eslint-disable-next-line no-empty-function
-      event: () => {}
-    };
-  }
-
   return (
     <ViewTransitions>
       <html lang='en'>
@@ -46,6 +37,22 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             site-id={process.env.RYBBIT_ANALYTICS_SITE_ID}
             defer={true}
             strategy='afterInteractive'
+          />
+        )}
+
+        {process.env.NODE_ENV === 'development' && (
+          <Script
+            id='rybbit-analytics-script-development'
+            defer={true}
+            strategy='afterInteractive'
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.rybbit = {
+                  pageview: () => {},
+                  event: () => {}
+                };
+              `
+            }}
           />
         )}
 
