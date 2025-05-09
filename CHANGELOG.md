@@ -1,5 +1,24 @@
 # Changelog
 
+## [2.8.0](https://github.com/chimpdev/skyhan.cloud/compare/v2.7.0...v2.8.0) (2025-05-09)
+
+
+### Features
+
+* add rybbit analytics script to layout ([30a7a1d](https://github.com/chimpdev/skyhan.cloud/commit/30a7a1d2afd1d97e4d8105b180c1de5827f32033))
+* add selfie image to header ([858dfda](https://github.com/chimpdev/skyhan.cloud/commit/858dfda28e55f886d990c3474a21d55a37fb79b3))
+* **analytics:** add custom events ([5d590bf](https://github.com/chimpdev/skyhan.cloud/commit/5d590bfe8bbea381690b4a8e138a2f7a5a979807))
+* implement environment variable validation using zod ([5d6b589](https://github.com/chimpdev/skyhan.cloud/commit/5d6b5894d6b7d2dacbff3a3d80e7e0a87dca442c))
+* remove Spotify integration and related components ([3ebfabd](https://github.com/chimpdev/skyhan.cloud/commit/3ebfabdba73a8c7b8aaa4761813f4fe1dd7ac7b8))
+* update resume pdf file ([6f1e5b5](https://github.com/chimpdev/skyhan.cloud/commit/6f1e5b5fd0dfa3b4f0acf410061d3c5ba8ce07fb))
+
+
+### Bug Fixes
+
+* add 'use client' directive to Projects and Works components ([e42de3a](https://github.com/chimpdev/skyhan.cloud/commit/e42de3ac70f72dfb335bba90facfbffc14c7dfcd))
+* **discord-status:** correct last seen timestamp conversion to milliseconds ([adacc58](https://github.com/chimpdev/skyhan.cloud/commit/adacc58fafd76c3b0f1a600fdab2c53013be9e5c))
+* move development analytics script to a separate Script component ([4b3a20f](https://github.com/chimpdev/skyhan.cloud/commit/4b3a20fdebbb5126feb0e8003479ad3069da0838))
+
 ## [2.7.0](https://github.com/chimpdev/skyhan.cloud/compare/v2.6.0...v2.7.0) (2025-02-12)
 
 
