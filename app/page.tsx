@@ -6,7 +6,7 @@ import DiscordStatus from '@/components/discord-status';
 import { Suspense } from 'react';
 import { LuLoader } from 'react-icons/lu';
 import Image from 'next/image';
-import MeImage from '@/public/me.jpeg';
+import MeImage from '@/public/me.jpg';
 
 export default function Page() {
   return (

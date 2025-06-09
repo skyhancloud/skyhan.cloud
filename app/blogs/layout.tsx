@@ -5,7 +5,7 @@ import { Link } from 'next-view-transitions';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import MeImage from '@/public/me.jpeg';
+import MeImage from '@/public/me.jpg';
 
 export default function BlogLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const router = useRouter();
