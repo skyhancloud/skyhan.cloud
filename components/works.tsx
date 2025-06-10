@@ -10,7 +10,7 @@ export default function Works() {
       description: 'I modernised the website by preserving the old content, designed a website from scratch and turned it into an application with React & Tailwind CSS.'
     },
     {
-      name: 'Full-stack Developer at barisyasaman.com',
+      name: 'Frontend and Backend Developer at barisyasaman.com',
       link: 'https://secim.barisyasaman.com',
       description: 'A site that simulates the Turkish elections and displays the results live on the Turkey map, connected to a Discord bot. I used React, SQLite, Tailwind CSS and Express.'
     },

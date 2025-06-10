@@ -28,7 +28,7 @@ export default function Page() {
             </h1>
 
             <span className='text-sm text-secondary'>
-              Full-stack Developer
+              Developer
             </span>
           </div>
         </div>
