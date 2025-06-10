@@ -3,7 +3,7 @@ name: Issue with Website
 about: Issues that related to website
 title: ''
 labels: ''
-assignees: chimpdev
+assignees: skyhancloud
 
 ---
 

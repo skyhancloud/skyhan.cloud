@@ -20,7 +20,7 @@ export default function Works() {
     },
     {
       name: 'Bark.js',
-      link: 'https://github.com/chimpdev/bark.js',
+      link: 'https://github.com/skyhancloud/bark.js',
       description: 'Bark.js is a simple JavaScript library for sending custom notifications to your iPhone using the bark.day.app iOS App.'
     }
   ];

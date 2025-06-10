@@ -93,7 +93,7 @@ export default function Page() {
         </h1>
 
         <div className='text-sm text-secondary'>
-          I’m generally active on Instagram and <InlineQuote href='https://github.com/chimpdev'>GitHub</InlineQuote>. You can contact me via <InlineQuote href='mailto:skyhancloud@gmail.com'>email</InlineQuote> or DM on <InlineQuote href='https://instagram.com/gokhanknows'>Instagram</InlineQuote>. Also don’t forget to check out my <InlineQuote href='/resume.pdf'>resume</InlineQuote>.
+          I’m generally active on Instagram and <InlineQuote href='https://github.com/skyhancloud'>GitHub</InlineQuote>. You can contact me via <InlineQuote href='mailto:root@skyhan.cloud'>email</InlineQuote> or DM on <InlineQuote href='https://instagram.com/skyhancloud'>Instagram</InlineQuote>. Also don’t forget to check out my <InlineQuote href='/resume.pdf'>resume</InlineQuote>.
         </div>
       </div>
     </div>

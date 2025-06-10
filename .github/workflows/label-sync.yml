@@ -12,7 +12,7 @@ jobs:
   label-sync:
     name: Label sync
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'chimpdev'
+    if: github.repository_owner == 'skyhancloud'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
