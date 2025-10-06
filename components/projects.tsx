@@ -5,6 +5,11 @@ import { Link } from 'next-view-transitions';
 export default function Projects() {
   const data = [
     {
+      name: 'SubWatch',
+      link: 'https://subwatch.net',
+      description: 'Track your subscriptions and manage your expenses. A personal project to help me stay on top of my subscriptions.'
+    },
+    {
       name: 'discord.place',
       link: 'https://discord.place',
       description: 'A hub for everything Discord. No matter what you’re looking for, you can find it here. A project I’m proud to develop and maintain.'
