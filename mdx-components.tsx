@@ -15,7 +15,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         className='group relative flex cursor-pointer scroll-mt-8 items-center'
       >
         <RiLink
-          className='pointer-events-none absolute left-[-25px] text-tertiary opacity-0 transition-opacity group-hover:opacity-100'
+          className='pointer-events-none absolute left-[-25px] text-primary opacity-0 transition-opacity group-hover:opacity-100'
           size={14}
         />
 
@@ -34,7 +34,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     a: ({ children, href }) => (
       <Link
         href={href || '#'}
-        className='group underline decoration-tertiary decoration-dotted underline-offset-4 transition-colors hover:decoration-primary'
+        className='group text-secondary underline decoration-secondary decoration-dotted underline-offset-4 transition-colors hover:text-primary hover:decoration-primary'
       >
         {children}
 
