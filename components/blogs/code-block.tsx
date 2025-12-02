@@ -1,7 +1,7 @@
 'use client';
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark, oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { gruvboxDark, gruvboxLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import cn from '@/utils/cn';
 import { useMedia } from 'react-use';
 import CopyCodeButton from '@/components/blogs/copy-code-button';
@@ -43,10 +43,10 @@ export default function CodeBlock({ children, id, icon: Icon, fileName, language
         // eslint-disable-next-line react/no-children-prop
         children={String(children).replace(/\n$/, '')}
         language={language}
-        style={prefersDark ? oneDark : oneLight}
+        style={prefersDark ? gruvboxDark : gruvboxLight}
         wrapLongLines={false}
         className={cn(
-          '!bg-[unset] !mb-0 max-w-[calc(100vw_-_4rem)] [&>code]:!bg-[unset]',
+          '!bg-[unset] !mb-0 max-w-[calc(100vw_-_4rem)] [&>code]:!font-light [&>code]:!bg-[unset]',
           !dimmed && '!bg-[rgba(var(--bg-tertiary))] [&>code]:!bg-[rgba(var(--bg-tertiary))]'
         )}
       />
