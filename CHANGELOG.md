@@ -1,5 +1,31 @@
 # Changelog
 
+## [2.8.0](https://github.com/skyhancloud/skyhan.cloud/compare/v2.7.0...v2.8.0) (2025-12-02)
+
+
+### Features
+
+* add generateStaticParams function to retrieve blog directories ([ffa68e6](https://github.com/skyhancloud/skyhan.cloud/commit/ffa68e66d632c9748d9c55476ed397508f2d1bc8))
+* add rybbit analytics script to layout ([30a7a1d](https://github.com/skyhancloud/skyhan.cloud/commit/30a7a1d2afd1d97e4d8105b180c1de5827f32033))
+* add selfie image to header ([858dfda](https://github.com/skyhancloud/skyhan.cloud/commit/858dfda28e55f886d990c3474a21d55a37fb79b3))
+* add SubWatch project to the projects list ([8398e4c](https://github.com/skyhancloud/skyhan.cloud/commit/8398e4c45767e2c89ec4b52917e45792c20d4ad4))
+* **analytics:** add custom events ([5d590bf](https://github.com/skyhancloud/skyhan.cloud/commit/5d590bfe8bbea381690b4a8e138a2f7a5a979807))
+* **component/discord-status:** add hide prop and integrate into blog layout ([69336b8](https://github.com/skyhancloud/skyhan.cloud/commit/69336b800b8af6dbe3860a8455f6e33fa36923bf))
+* implement environment variable validation using zod ([5d6b589](https://github.com/skyhancloud/skyhan.cloud/commit/5d6b5894d6b7d2dacbff3a3d80e7e0a87dca442c))
+* remove Spotify integration and related components ([3ebfabd](https://github.com/skyhancloud/skyhan.cloud/commit/3ebfabdba73a8c7b8aaa4761813f4fe1dd7ac7b8))
+* replace Bricolage Grotesque font with Faustina and add Avatar component ([d662350](https://github.com/skyhancloud/skyhan.cloud/commit/d662350370b07ddd3629add2ebb0ce830ca72a52))
+* update me image ([fe05ed1](https://github.com/skyhancloud/skyhan.cloud/commit/fe05ed1470f87211a7859356d562dbc73ce3e848))
+* update resume pdf file ([6f1e5b5](https://github.com/skyhancloud/skyhan.cloud/commit/6f1e5b5fd0dfa3b4f0acf410061d3c5ba8ce07fb))
+
+
+### Bug Fixes
+
+* add 'use client' directive to Projects and Works components ([e42de3a](https://github.com/skyhancloud/skyhan.cloud/commit/e42de3ac70f72dfb335bba90facfbffc14c7dfcd))
+* **discord-status:** correct last seen timestamp conversion to milliseconds ([adacc58](https://github.com/skyhancloud/skyhan.cloud/commit/adacc58fafd76c3b0f1a600fdab2c53013be9e5c))
+* move development analytics script to a separate Script component ([4b3a20f](https://github.com/skyhancloud/skyhan.cloud/commit/4b3a20fdebbb5126feb0e8003479ad3069da0838))
+* update job titles in Page and Works components ([8284970](https://github.com/skyhancloud/skyhan.cloud/commit/82849704f36feec59a8105cf9147a0215baaffdb))
+* update link and icon colors for better visibility ([e75bfcb](https://github.com/skyhancloud/skyhan.cloud/commit/e75bfcb1ba2e78a304f8efcddadb4f57e792b270))
+
 ## [2.7.0](https://github.com/chimpdev/skyhan.cloud/compare/v2.6.0...v2.7.0) (2025-02-12)
 
 
