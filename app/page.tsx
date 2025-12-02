@@ -37,7 +37,7 @@ export default function Page() {
           I’m a 19-year-old high school student and freelancer from Turkey, passionate about software development and always eager to learn. Currently focusing to learn more about <InlineQuote text='TypeScript is a superset of JavaScript that adds static typing to the language. It’s a powerful tool that helps you catch bugs and improve code quality.'>TypeScript</InlineQuote> world.
         </span>
 
-        <h1 className='mt-4 font-faustina font-medium text-secondary'>
+        <h1 className='font-faustina mt-4 font-medium text-secondary'>
           What do I do?
         </h1>
 

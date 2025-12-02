@@ -5,6 +5,7 @@ import { Link } from 'next-view-transitions';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Avatar from '@/components/avatar';
+import DiscordStatus from '@/components/discord-status';
 
 export default function BlogLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const router = useRouter();
@@ -69,6 +70,11 @@ export default function BlogLayout({ children }: Readonly<{ children: React.Reac
             Gökhan Bulut
           </span>
         </div>
+
+        <DiscordStatus
+          userId='957840712404193290'
+          hide={true}
+        />
       </Link>
 
       <div

@@ -11,9 +11,10 @@ import { useDiscordUserStore } from '@/stores/discord-user';
 
 type DiscordStatusProps = {
   userId: string;
+  hide?: boolean;
 }
 
-export default function DiscordStatus({ userId }: DiscordStatusProps) {
+export default function DiscordStatus({ userId, hide = false }: DiscordStatusProps) {
   type Status = 'online' | 'offline' | 'loading' | 'error';
 
   const [status, setStatus] = useState<Status>('loading');
@@ -58,7 +59,10 @@ export default function DiscordStatus({ userId }: DiscordStatusProps) {
       side='bottom'
     >
       <Link
-        className='flex cursor-pointer flex-col items-end transition-opacity hover:opacity-70'
+        className={cn(
+          'flex cursor-pointer flex-col items-end transition-opacity hover:opacity-70',
+          hide && 'pointer-events-none opacity-0'
+        )}
         href='https://lantern.rest'
         onClick={() => {
           if ('rybbit' in window) window.rybbit.event('discord_status_click');
