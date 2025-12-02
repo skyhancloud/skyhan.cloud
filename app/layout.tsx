@@ -10,9 +10,9 @@ const geistSans = localFont({
   weight: '100 900'
 });
 
-const bricolageGrotesque = localFont({
-  src: '../fonts/BricolageGrotesque.ttf',
-  variable: '--font-bricolage-grotesque',
+const faustina = localFont({
+  src: '../fonts/Faustina.ttf',
+  variable: '--font-faustina',
   weight: '100 900'
 });
 
@@ -56,7 +56,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           />
         )}
 
-        <body className={`${geistSans.variable} ${bricolageGrotesque.variable} font-geist text-primary antialiased`}>
+        <body className={`${geistSans.variable} ${faustina.variable} font-geist text-primary antialiased`}>
           <div className='flex h-dvh flex-col px-6 sm:px-0'>
             {children}
           </div>

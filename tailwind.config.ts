@@ -31,7 +31,7 @@ export default {
       },
       fontFamily: {
         geist: ['var(--font-geist-sans)', 'sans'],
-        bricolageGrotesque: ['var(--font-bricolage-grotesque)', 'sans']
+        faustina: ['var(--font-faustina)', 'serif']
       },
       screens: {
         mobile: '420px'

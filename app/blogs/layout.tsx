@@ -2,10 +2,9 @@
 
 import cn from '@/utils/cn';
 import { Link } from 'next-view-transitions';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import MeImage from '@/public/me.jpg';
+import Avatar from '@/components/avatar';
 
 export default function BlogLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const router = useRouter();
@@ -59,17 +58,10 @@ export default function BlogLayout({ children }: Readonly<{ children: React.Reac
         className='flex items-center gap-x-4'
         href='/'
       >
-        <Image
-          src={MeImage}
-          alt='Gökhan Bulut'
-          width={100}
-          height={100}
-          className='size-12 rounded-full border-2 border-primary object-cover'
-          placeholder='blur'
-        />
+        <Avatar />
 
         <div className='flex flex-col'>
-          <h1 className='font-bricolageGrotesque font-bold'>
+          <h1 className='font-faustina font-bold'>
             {title === '' ? 'skyhan.cloud' : title.split(' - ').shift()}
           </h1>
 
@@ -83,11 +75,12 @@ export default function BlogLayout({ children }: Readonly<{ children: React.Reac
         className={cn(
           'w-full max-w-full lg:max-w-3xl markdown prose min-w-[0px] dark:prose-invert',
           'prose-blockquote:border-l-primary prose-blockquote:text-tertiary',
-          'prose-li:marker:text-tertiary',
+          'prose-li:marker:text-tertiary prose-li:text-secondary',
+          'prose-strong:text-primary',
           'prose-thead:border-b-[rgba(var(--bg-quaternary))] prose-tr:border-b-[rgba(var(--bg-tertiary))]',
-          'prose-p:whitespace-pre-wrap',
+          'prose-p:whitespace-pre-wrap prose-p:text-primary',
           'prose-pre:bg-[unset] prose-pre:p-0',
-          'prose-headings:mt-14 prose-headings:mb-4 prose-headings:text-primary prose-headings:text-base prose-headings:font-semibold prose-headings:font-bricolageGrotesque',
+          'prose-headings:mt-14 prose-headings:mb-4 prose-headings:text-tertiary prose-headings:text-base prose-headings:font-semibold prose-headings:font-faustina',
           'prose-code:after:hidden prose-code:before:hidden'
         )}
       >

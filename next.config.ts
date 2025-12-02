@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
       },
       {
         hostname: 'i.imgur.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.discordapp.com',
+        pathname: '/avatars/957840712404193290/*'
       }
     ]
   }

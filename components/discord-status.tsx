@@ -7,6 +7,7 @@ import { Link } from 'next-view-transitions';
 import type { LanternSpotify, LanternUserResponse } from '@/types';
 import Image from 'next/image';
 import getRelativeTime from '@/utils/getRelativeTime';
+import { useDiscordUserStore } from '@/stores/discord-user';
 
 type DiscordStatusProps = {
   userId: string;
@@ -18,6 +19,8 @@ export default function DiscordStatus({ userId }: DiscordStatusProps) {
   const [status, setStatus] = useState<Status>('loading');
   const [spotify, setSpotify] = useState<LanternSpotify | null>(null);
   const [lastSeenAt, setLastSeenAt] = useState<number | null>(null);
+
+  const setData = useDiscordUserStore(state => state.setData);
 
   useEffect(() => {
     async function getData() {
@@ -35,6 +38,8 @@ export default function DiscordStatus({ userId }: DiscordStatusProps) {
 
           if (data.active_platforms.spotify !== null) setSpotify(data.active_platforms.spotify);
         }
+
+        setData(data);
       } catch (error) {
         console.error(`Something went wrong: ${error}`);
 
@@ -43,7 +48,7 @@ export default function DiscordStatus({ userId }: DiscordStatusProps) {
     }
 
     getData();
-  }, [userId]);
+  }, [userId, setData]);
 
   const isOffline = status === 'loading' || status === 'error' || status === 'offline';
 
