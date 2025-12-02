@@ -3,6 +3,17 @@ import { Metadata } from 'next/types';
 import fs from 'node:fs';
 import React from 'react';
 
+export async function generateStaticParams() {
+  const blogFiles = fs.readdirSync('app/blogs');
+
+  return blogFiles
+    // eslint-disable-next-line security/detect-non-literal-fs-filename
+    .filter(file => fs.statSync(`app/blogs/${file}`).isDirectory())
+    .map(file => ({
+      id: file.replace(/\.mdx/, '')
+    }));
+}
+
 export default async function Blogs() {
   const blogFiles = fs.readdirSync('app/blogs');
 
