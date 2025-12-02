@@ -10,19 +10,17 @@ import Avatar from '@/components/avatar';
 export default function Page() {
   return (
     <div className='mx-auto flex w-full max-w-[600px] flex-col gap-y-24 py-16'>
-      <div className='flex w-full items-center justify-between'>
-        <div className='flex items-center gap-x-4'>
-          <Avatar />
+      <div className='flex w-full items-center gap-x-4'>
+        <Avatar />
 
-          <div className='flex flex-col'>
-            <h1 className='font-faustina font-bold'>
-              Gökhan Bulut
-            </h1>
+        <div className='flex flex-col'>
+          <h1 className='font-faustina font-bold'>
+            Gökhan Bulut
+          </h1>
 
-            <span className='text-sm text-secondary'>
-              Developer
-            </span>
-          </div>
+          <span className='text-sm text-secondary'>
+            Developer
+          </span>
         </div>
 
         <DiscordStatus userId='957840712404193290' />
