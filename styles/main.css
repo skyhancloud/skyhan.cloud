@@ -4,30 +4,47 @@
 html, body {
   width: 100%;
   min-width: 320px !important;
+
   background-color: rgba(var(--bg-background)) !important;
   color: rgba(var(--text-primary));
-  --light-bg-background: 238, 238, 238;
-  --light-bg-secondary: 230, 230, 230;
-  --light-bg-tertiary: 220, 220, 220;
-  --light-bg-quaternary: 210, 210, 210;
-  --light-text-primary: 36, 42, 49;
-  --light-text-secondary: 73, 80, 87;
-  --light-text-tertiary: 108, 117, 125;
-  --light-text-placeholder: 133, 138, 141;
-  --light-border-primary: 204, 204, 204;
-  --dark-bg-background: 10, 10, 15;
-  --dark-bg-secondary: 18, 18, 24;
-  --dark-bg-tertiary: 28, 28, 38;
-  --dark-bg-quaternary: 38, 38, 48;
-  --dark-text-primary: 240, 240, 245;
-  --dark-text-secondary: 210, 210, 220;
-  --dark-text-tertiary: 170, 170, 180;
-  --dark-text-placeholder: 140, 140, 150;
-  --dark-border-primary: 50, 50, 65;
+
+  /* ---- LIGHT MODE (subtle warmth, not yellow) ---- */
+  --light-bg-background: 250, 248, 245;     /* soft eggshell */
+  --light-bg-secondary: 242, 240, 236;
+  --light-bg-tertiary: 234, 232, 228;
+  --light-bg-quaternary: 225, 223, 219;
+
+  --light-text-primary: 40, 38, 36;
+  --light-text-secondary: 82, 80, 76;
+  --light-text-tertiary: 120, 118, 112;
+  --light-text-placeholder: 145, 142, 138;
+
+  --light-border-primary: 215, 212, 208;
+
+  /* ---- WARMER, LIGHTER DARK MODE ---- */
+  /* Key idea: move toward "warm stone" rather than brown/yellow */
+  --dark-bg-background: 38, 36, 34;          /* warm charcoal → lighter */
+  --dark-bg-secondary: 48, 46, 44;           /* gentle lift */
+  --dark-bg-tertiary: 58, 56, 54;            /* soft warm stone */
+  --dark-bg-quaternary: 70, 68, 65;          /* card surfaces */
+
+  /* warm-neutral white, not yellow */
+  --dark-text-primary: 232, 228, 220;        /* soft warm off-white */
+  --dark-text-secondary: 198, 194, 188;
+  --dark-text-tertiary: 160, 156, 150;
+  --dark-text-placeholder: 130, 126, 120;
+
+  /* border: subtle, warm, not yellow */
+  --dark-border-primary: 85, 82, 78;
+
+  /* accent remains warm but not orange-heavy */
+  --accent-primary: 168, 104, 72;            /* clay but muted */
+
   transition-property: opacity, filter;
   transition-timing-function: ease-in-out;
   transition-duration: 500ms;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -72,8 +89,8 @@ html, body {
 }
 
 ::selection {
-  background-color: #6648ec;
-  color: #e3eeff;
+  background-color: rgba(var(--text-primary));
+  color: rgba(var(--bg-background));
 }
 
 [data-rmiz-modal-img] {
