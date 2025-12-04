@@ -61,7 +61,7 @@ export default function DiscordStatus({ userId, hide = false }: DiscordStatusPro
       <Link
         className={cn(
           'flex cursor-pointer flex-col items-end transition-opacity hover:opacity-70',
-          hide && 'pointer-events-none opacity-0'
+          hide && 'hidden'
         )}
         href='https://lantern.rest'
         onClick={() => {
