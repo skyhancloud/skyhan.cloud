@@ -71,6 +71,8 @@ export default function BlogLayout({ children }: Readonly<{ children: React.Reac
           </span>
         </div>
 
+        <div className='grow' />
+
         <DiscordStatus
           userId='957840712404193290'
           hide={true}
