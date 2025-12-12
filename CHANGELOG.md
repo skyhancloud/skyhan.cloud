@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.1](https://github.com/skyhancloud/skyhan.cloud/compare/v2.8.0...v2.8.1) (2025-12-12)
+
+
+### Bug Fixes
+
+* update next dependency from version 15.0.5 to 15.0.7 ([3f5f891](https://github.com/skyhancloud/skyhan.cloud/commit/3f5f891be1853cb6375e519427c0c46535a6f402))
+
 ## [2.8.0](https://github.com/skyhancloud/skyhan.cloud/compare/v2.7.0...v2.8.0) (2025-12-02)
 
 
