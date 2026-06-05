@@ -34,7 +34,7 @@ export default function Page() {
         </h1>
 
         <span className='whitespace-pre-wrap text-sm text-secondary'>
-          I’m a 19-year-old high school student and freelancer from Turkey, passionate about software development and always eager to learn. Currently focusing to learn more about <InlineQuote text='TypeScript is a superset of JavaScript that adds static typing to the language. It’s a powerful tool that helps you catch bugs and improve code quality.'>TypeScript</InlineQuote> world.
+          I’m a 20-year-old high school student and freelancer from Turkey, passionate about software development and always eager to learn. Currently focusing to learn more about <InlineQuote text='TypeScript is a superset of JavaScript that adds static typing to the language. It’s a powerful tool that helps you catch bugs and improve code quality.'>TypeScript</InlineQuote> world.
         </span>
 
         <h1 className='mt-4 font-faustina font-medium text-secondary'>
